@@ -1,0 +1,24 @@
+
+/* Leaflet Structural Fixes for Tile Grid Alignment */
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: #070b14 !important;
+}
+
+.leaflet-tile-container img {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.leaflet-pane {
+  z-index: 10 !important;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
